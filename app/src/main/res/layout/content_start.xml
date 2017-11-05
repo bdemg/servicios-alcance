@@ -32,16 +32,18 @@
                 android:background="@android:drawable/dialog_holo_light_frame"
                 app:srcCompat="@drawable/electricista"
                 android:layout_marginBottom="@dimen/horizontal_table_padding"
-                android:layout_marginRight="@dimen/vertical_table_padding"/>
+                android:layout_marginRight="@dimen/vertical_table_padding"
+                android:onClick="searchElectricityCategory"/>
 
             <ImageView
-                android:id="@+id/lawn_button"
+                android:id="@+id/gardening_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/horizontal_table_padding"
+                android:layout_marginLeft="@dimen/vertical_table_padding"
                 android:background="@android:drawable/dialog_holo_light_frame"
                 app:srcCompat="@drawable/jardineria"
-                android:layout_marginBottom="@dimen/horizontal_table_padding"
-                android:layout_marginLeft="@dimen/vertical_table_padding"/>
+                android:onClick="searchGardeningCategory"/>
         </TableRow>
 
         <TableRow
@@ -55,7 +57,8 @@
                 android:background="@android:drawable/dialog_holo_light_frame"
                 app:srcCompat="@drawable/carpinteria"
                 android:layout_marginTop="@dimen/horizontal_table_padding"
-                android:layout_marginRight="@dimen/vertical_table_padding"/>
+                android:layout_marginRight="@dimen/vertical_table_padding"
+                android:onClick="searchWoodCategory"/>
 
             <ImageView
                 android:id="@+id/piping_button"
@@ -64,7 +67,8 @@
                 android:background="@android:drawable/dialog_holo_light_frame"
                 app:srcCompat="@drawable/plomeria"
                 android:layout_marginTop="@dimen/horizontal_table_padding"
-                android:layout_marginLeft="@dimen/vertical_table_padding"/>
+                android:layout_marginLeft="@dimen/vertical_table_padding"
+                android:onClick="searchPipingCategory"/>
         </TableRow>
     </TableLayout>
 </android.support.constraint.ConstraintLayout>

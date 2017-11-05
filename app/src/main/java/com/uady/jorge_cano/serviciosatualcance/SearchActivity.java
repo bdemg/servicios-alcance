@@ -1,13 +1,9 @@
 package com.uady.jorge_cano.serviciosatualcance;
 
-import android.app.ActionBar;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.SearchView;
-import android.view.Gravity;
-import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class StartActivity extends AppCompatActivity
+public class SearchActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.activity_search);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -36,6 +32,12 @@ public class StartActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        setSearchResults();
+    }
+
+    private void setSearchResults() {
+
     }
 
     @Override
@@ -51,16 +53,12 @@ public class StartActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.start, menu);
+        getMenuInflater().inflate(R.menu.search, menu);
 
-        SearchView serviceSearch = (SearchView) menu.findItem(R.id.services_start_search).getActionView();
+        SearchView serviceSearch = (SearchView) menu.findItem(R.id.services_search_results).getActionView();
         serviceSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-
-                if(!query.equals("")) {
-                    search(query);
-                }
                 return false;
             }
 
@@ -69,14 +67,18 @@ public class StartActivity extends AppCompatActivity
                 return false;
             }
         });
+
+        String category = getIntent().getStringExtra("searchQuery");
+        if(category != null) {
+            serviceSearch.setQuery(category, false);
+            setTitle(category);
+        } else {
+            String searchQuery = getIntent().getStringExtra("categorySearch");
+            serviceSearch.setQuery(searchQuery, false);
+            setTitle(searchQuery);
+        }
+
         return true;
-    }
-
-    private void search(String query) {
-
-        Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("searchQuery", query);
-        startActivity(intent);
     }
 
     @Override
@@ -117,33 +119,5 @@ public class StartActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void searchElectricityCategory(View view){
-
-        Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Electricista");
-        startActivity(intent);
-    }
-
-    public void searchGardeningCategory(View view){
-
-        Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Jardinería");
-        startActivity(intent);
-    }
-
-    public void searchWoodCategory(View view){
-
-        Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Carpintería");
-        startActivity(intent);
-    }
-
-    public void searchPipingCategory(View view){
-
-        Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Plomería");
-        startActivity(intent);
     }
 }
