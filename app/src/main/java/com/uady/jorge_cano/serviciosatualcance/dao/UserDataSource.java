@@ -14,10 +14,6 @@ public class UserDataSource {
 
     private SQLiteDatabase database;
     private UserDBHelper userDBHelper;
-    private String[] allColumns = {
-            UserContract.COLUMN_NAME_EMAIL,
-            UserContract.COLUMN_NAME_PASSWORD
-    };
 
     public UserDataSource(Context input_context){
 
@@ -34,30 +30,41 @@ public class UserDataSource {
         this.userDBHelper.close();
     }
 
-    public long insertUser(String input_email, String input_password) {
+    public long insertUser(
+            String input_name,
+            String input_email,
+            String input_phone,
+            String input_address,
+            String input_password
+    ) {
 
         ContentValues values = new ContentValues();
+        values.put(UserContract.COLUMN_NAME_NAME, input_name);
         values.put(UserContract.COLUMN_NAME_EMAIL, input_email);
+        values.put(UserContract.COLUMN_NAME_PHONE, input_phone);
+        values.put(UserContract.COLUMN_NAME_ADDRESS, input_address);
         values.put(UserContract.COLUMN_NAME_PASSWORD, input_password);
         long newRowId;
         newRowId = database.insert(UserContract.TABLE_NAME, null, values);
         return newRowId;
     }
 
-    public User getUser() {
-
-        Cursor cursor = database.query(UserContract.TABLE_NAME, allColumns, null, null, null, null, null);
-        cursor.moveToFirst();
-        User user = cursorToUser(cursor);
-        cursor.close();
-        return user;
+    public boolean isUserRegistered(String email, String password){
+        Cursor cursor = database.rawQuery(
+                "SELECT * FROM "+UserContract.TABLE_NAME+" WHERE "+
+                UserContract.COLUMN_NAME_EMAIL+"=? AND "+
+                UserContract.COLUMN_NAME_PASSWORD+"=?",
+                new String[] {email, password}
+        );
+        return (cursor.getCount() > 0);
     }
 
-    private User cursorToUser(Cursor cursor){
-
-        User user = new User();
-        user.setEmail(cursor.getString(0));
-        user.setPassword(cursor.getString(1));
-        return user;
+    public boolean isEmailRegistered(String email){
+        Cursor cursor = database.rawQuery(
+                "SELECT * FROM "+UserContract.TABLE_NAME+" WHERE "+
+                        UserContract.COLUMN_NAME_EMAIL+"=?",
+                new String[] {email}
+        );
+        return (cursor.getCount() > 0);
     }
 }
