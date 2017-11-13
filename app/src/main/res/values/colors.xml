@@ -5,4 +5,6 @@
     <color name="colorAccent">#3d8d3b</color>
     <color name="linkBlue">#0000EE</color>
     <color name="black">#000</color>
+    <color name="starRating">#FE6A25</color>
+    <color name="background">#EBEBEB</color>
 </resources>
