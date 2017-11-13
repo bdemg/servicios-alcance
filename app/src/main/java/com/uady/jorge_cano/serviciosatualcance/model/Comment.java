@@ -10,7 +10,7 @@ public class Comment {
     private String comment;
     private float rating;
 
-    public Comment(String name, String comment, double rating) {
+    public Comment(String name, String comment, float rating) {
         this.name = name;
         this.comment = comment;
         this.rating = rating;
