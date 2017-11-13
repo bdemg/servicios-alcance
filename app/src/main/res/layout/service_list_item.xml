@@ -24,7 +24,6 @@
             android:paddingTop="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.23"
             android:textColor="@color/black"
             android:textSize="@dimen/general_text_size"
             android:text="Destapado de cañerías" />
