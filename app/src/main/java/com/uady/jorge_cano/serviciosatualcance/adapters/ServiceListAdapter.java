@@ -44,6 +44,6 @@ public class ServiceListAdapter extends ArrayAdapter {
         TextView service = (TextView) serviceRow.findViewById(R.id.service_name);
         service.setText(this.services[position]);
 
-        return convertView;
+        return serviceRow;
     }
 }

@@ -31,7 +31,9 @@
             android:layout_height="wrap_content"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lectus quis nunc tristique pulvinar ut nec est. Nulla viverra orci in nisi pharetra, at venenatis orci dignissim."
             android:textColor="@color/black"
-
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="3"
             android:textSize="@dimen/general_text_size" />
 
         <RatingBar
