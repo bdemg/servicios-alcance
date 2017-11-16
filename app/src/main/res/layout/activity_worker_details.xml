@@ -61,7 +61,7 @@
             android:id="@+id/worker_distance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a 6 km de aquí"
+            android:text="a 6 km de su localización"
             android:textColor="@color/black"
             android:textSize="@dimen/general_text_size"
             />
@@ -74,6 +74,7 @@
             android:numStars="5"
             android:rating="4.5"
             android:progressTint="@color/starRating"
+            android:isIndicator="true"
             />
 
         <TextView
@@ -81,6 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Servicios:"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="@dimen/general_text_size"
             android:layout_gravity="start"
@@ -98,6 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Comentarios:"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="@dimen/general_text_size"
             android:layout_gravity="start"
