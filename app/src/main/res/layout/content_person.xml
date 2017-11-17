@@ -12,7 +12,7 @@
         >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="16dp">
             <ImageView
                 android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
                 android:src="@drawable/ic_person_black_24dp"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/person_name"
                 android:layout_toRightOf="@+id/person_photo"

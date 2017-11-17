@@ -1,5 +1,6 @@
 package com.uady.jorge_cano.serviciosatualcance;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,7 @@ public class ResultListAdapter extends RecyclerView.Adapter<ResultListAdapter.Re
 
     public class ResultListHolder extends RecyclerView.ViewHolder{
 
+        public CardView card;
         public TextView name;
         public TextView phone;
         public TextView distance;
@@ -29,6 +31,7 @@ public class ResultListAdapter extends RecyclerView.Adapter<ResultListAdapter.Re
 
         public ResultListHolder(View view){
             super(view);
+            this.card = (CardView) view.findViewById(R.id.card);
             this.name = (TextView) view.findViewById(R.id.person_name);
             this.phone = (TextView) view.findViewById(R.id.person_telephone);
             this.distance = (TextView) view.findViewById(R.id.distance_of_me);
@@ -60,5 +63,10 @@ public class ResultListAdapter extends RecyclerView.Adapter<ResultListAdapter.Re
     @Override
     public int getItemCount() {
         return 0;
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
     }
 }
