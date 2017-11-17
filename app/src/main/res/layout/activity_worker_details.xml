@@ -87,6 +87,7 @@
             android:textSize="@dimen/general_text_size"
             android:layout_gravity="start"
             android:paddingLeft="10dp"
+            android:paddingTop="10dp"
             />
 
         <ListView
@@ -105,6 +106,7 @@
             android:textSize="@dimen/general_text_size"
             android:layout_gravity="start"
             android:paddingLeft="10dp"
+            android:paddingTop="25dp"
             />
 
         <ListView
