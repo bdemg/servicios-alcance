@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import com.uady.jorge_cano.serviciosatualcance.dao.UserDataSource;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class RegisterActivity extends AppCompatActivity {
 
     @Override
@@ -33,14 +36,38 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void registerUser(View view){
 
-        if( isPasswordValid() && !areTextFieldsEmpty() ) {
-            //registrar en base de datos
-            EditText email = (EditText) findViewById(R.id.register_email);
-            EditText password = (EditText) findViewById(R.id.register_password1);
+        String name = ((EditText) findViewById(R.id.register_name)).getText().toString();
+        String email = ((EditText) findViewById(R.id.register_email)).getText().toString();
+        String phone = ((EditText) findViewById(R.id.register_phone)).getText().toString();
+        String address = ((EditText) findViewById(R.id.register_address)).getText().toString();
+        String password = ((EditText) findViewById(R.id.register_password1)).getText().toString();
 
+        if( areTextFieldsEmpty() ){
+            Toast.makeText(
+                    getApplicationContext(),
+                    "Aún hay campos por completar.",
+                    Toast.LENGTH_SHORT
+            ).show();
+        }
+        else if( !isEmailFormatValid(email) ){
+            Toast.makeText(
+                    getApplicationContext(),
+                    "No es un correo electrónico válido.",
+                    Toast.LENGTH_SHORT
+            ).show();
+        }
+        else if( isEmailRegistered(email) ){
+            Toast.makeText(
+                    getApplicationContext(),
+                    "No se pudo hacer el registro. El correo electrónico ya existe.",
+                    Toast.LENGTH_SHORT
+            ).show();
+        }
+        else if( isPasswordValid() ) {
+            //registrar en base de datos
             UserDataSource userDataSource = new UserDataSource(getApplicationContext());
             userDataSource.open();
-            userDataSource.insertUser(email.getText().toString(), password.getText().toString());
+            userDataSource.insertUser(name, email, phone, address, password);
             userDataSource.close();
 
             Toast.makeText(getApplicationContext(), "Usuario registrado.",Toast.LENGTH_SHORT).show();
@@ -51,30 +78,50 @@ public class RegisterActivity extends AppCompatActivity {
         else{
             Toast.makeText(
                     getApplicationContext(),
-                    "No se pudo hacer el registro.",
+                    "No se pudo hacer el registro. Contraseña incorrecta.",
                     Toast.LENGTH_SHORT
             ).show();
         }
     }
 
+    private boolean isEmailFormatValid(String email){
+
+        Matcher matcher = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE).matcher(email);
+        return matcher.find();
+    }
+
+    private boolean isEmailRegistered(String email){
+
+        UserDataSource userDataSource = new UserDataSource(getApplicationContext());
+        userDataSource.open();
+        boolean isUserRegistered = userDataSource.isEmailRegistered(email);
+        userDataSource.close();
+
+        return isUserRegistered;
+    }
+
     private boolean isPasswordValid(){
 
-        EditText password1 = (EditText) findViewById(R.id.register_password1);
-        String passwordText1 = password1.getText().toString();
-        EditText password2 = (EditText) findViewById(R.id.register_password2);
-        String passwordText2 = password2.getText().toString();
+        String password1 = ((EditText) findViewById(R.id.register_password1)).getText().toString();
+        String password2 = ((EditText) findViewById(R.id.register_password2)).getText().toString();
 
-        return passwordText1.compareTo(passwordText2) == 0;
+        return password1.compareTo(password2) == 0;
     }
 
     private boolean areTextFieldsEmpty(){
 
-        EditText email = (EditText) findViewById(R.id.register_email);
-        EditText password1 = (EditText) findViewById(R.id.register_password1);
-        EditText password2 = (EditText) findViewById(R.id.register_password2);
+        String name = ((EditText) findViewById(R.id.register_name)).getText().toString();
+        String email = ((EditText) findViewById(R.id.register_email)).getText().toString();
+        String phone = ((EditText) findViewById(R.id.register_phone)).getText().toString();
+        String address = ((EditText) findViewById(R.id.register_address)).getText().toString();
+        String password1 = ((EditText) findViewById(R.id.register_password1)).getText().toString();
+        String password2 = ((EditText) findViewById(R.id.register_password2)).getText().toString();
 
-        return email.getText().toString().compareTo("") == 0 ||
-                password1.getText().toString().compareTo("") == 0 ||
-                password2.getText().toString().compareTo("") == 0;
+        return name.compareTo("") == 0 ||
+                email.compareTo("") == 0 ||
+                phone.compareTo("") == 0 ||
+                address.compareTo("") == 0 ||
+                password1.compareTo("") == 0 ||
+                password2.compareTo("") == 0;
     }
 }
