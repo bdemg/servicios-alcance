@@ -3,6 +3,7 @@ package com.uady.jorge_cano.serviciosatualcance;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,11 +16,24 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_registerView);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 
     public void registerUser(View view){
 
-        if( isPasswordValid() || !areTextFieldsEmpty() ) {
+        if( isPasswordValid() && !areTextFieldsEmpty() ) {
             //registrar en base de datos
             EditText email = (EditText) findViewById(R.id.register_email);
             EditText password = (EditText) findViewById(R.id.register_password1);
