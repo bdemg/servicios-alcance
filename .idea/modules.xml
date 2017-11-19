@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ServiciosatuAlcance.iml" filepath="$PROJECT_DIR$/ServiciosatuAlcance.iml" />
+      <module fileurl="file://C:\Users\M\Documents\GIT\servicios-alcance\ServiciosatuAlcance.iml" filepath="C:\Users\M\Documents\GIT\servicios-alcance\ServiciosatuAlcance.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/servicios-alcance.iml" filepath="$PROJECT_DIR$/servicios-alcance.iml" />
     </modules>

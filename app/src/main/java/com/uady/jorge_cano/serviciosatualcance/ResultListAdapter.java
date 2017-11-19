@@ -62,7 +62,7 @@ public class ResultListAdapter extends RecyclerView.Adapter<ResultListAdapter.Re
 
     @Override
     public int getItemCount() {
-        return 0;
+        return professionalList.size();
     }
 
     @Override
