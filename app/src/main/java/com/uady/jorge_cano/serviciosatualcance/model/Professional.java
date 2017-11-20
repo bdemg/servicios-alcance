@@ -1,10 +1,12 @@
 package com.uady.jorge_cano.serviciosatualcance.model;
 
+import java.io.Serializable;
+
 /**
  * Created by jeremiah on 19/11/2017.
  */
 
-public class Professional {
+public class Professional implements Serializable{
     private String name;
     private String address;
     private String email;

@@ -227,9 +227,8 @@ public class ProfessionalsData {
         ArrayList<Professional> carpinteros = new ArrayList<>();
 
         carpinteros.add(new Professional("Tapicería Mante",
-                "\t\n" +
-                        "Calle 41 # 532 E x 66 y 72 Centro, (a un costado de la SPV), Mérida, Yucatán",
-                "www.tapiceriamante.com",
+                "Calle 41 # 532 E x 66 y 72 Centro, (a un costado de la SPV), Mérida, Yucatán",
+                "tapiceriamante@hotmail.com",
                 "99 91 53 56 70",
                 new String[]{"Tapicería en general, automotríz, residencial, industrial, hotelera, fabricación de muebles y cuartos acústicos para estudios de grabación."},
                 7.0f

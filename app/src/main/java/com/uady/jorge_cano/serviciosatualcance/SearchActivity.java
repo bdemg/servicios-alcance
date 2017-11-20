@@ -15,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.uady.jorge_cano.serviciosatualcance.dao.ProfessionalsData;
+
 public class SearchActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -115,6 +117,7 @@ public class SearchActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
             Intent intent = new Intent(this, WorkerDetailsActivity.class);
+            intent.putExtra("professional", ProfessionalsData.getCarpinterosData().get(0));
             startActivity(intent);
         }
 
