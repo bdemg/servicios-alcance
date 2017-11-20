@@ -1,23 +1,30 @@
 package com.uady.jorge_cano.serviciosatualcance.dao;
 
+import java.io.Serializable;
+
 /**
- * Created by M on 13/11/2017.
+ * Created by jeremiah on 19/11/2017.
  */
 
-public class Professional {
-
+public class Professional implements Serializable{
     private String name;
-    private String telephone;
     private String address;
+    private String email;
+    private String phoneNumber;
+    private String[] services;
     private float rating;
+    private float distanceFromUser;
 
-    public Professional() {}
+    public Professional() {
+    }
 
-    public Professional(String name, String telephone, String address, float rating) {
+    public Professional(String name, String address, String email, String phoneNumber, String[] services, float distanceFromUser) {
         this.name = name;
-        this.telephone = telephone;
         this.address = address;
-        this.rating = rating;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.services = services;
+        this.distanceFromUser = distanceFromUser;
     }
 
     public String getName() {
@@ -28,20 +35,44 @@ public class Professional {
         this.name = name;
     }
 
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String[] getServices() {
+        return services;
+    }
+
+    public void setServices(String[] services) {
+        this.services = services;
+    }
+
+    public float getDistanceFromUser() {
+        return distanceFromUser;
+    }
+
+    public void setDistanceFromUser(float distanceFromUser) {
+        this.distanceFromUser = distanceFromUser;
     }
 
     public float getRating() {

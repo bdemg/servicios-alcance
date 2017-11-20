@@ -2,13 +2,9 @@ package com.uady.jorge_cano.serviciosatualcance;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -18,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.uady.jorge_cano.serviciosatualcance.adapters.ResultListAdapter;
 import com.uady.jorge_cano.serviciosatualcance.dao.Professional;
 
 import java.util.ArrayList;
@@ -56,20 +53,35 @@ public class SearchActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        loadData();
+        Intent intent = getIntent();
+        String category = intent.getStringExtra("categorySearch");
+
+        loadData(category);
         recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
     }
 
-    private void loadData(){
-        Professional professional = new Professional("Manuel Pérez","99996548","Calle 25 # 456",3);
-        professionalList.add(professional);
-        professional = new Professional("Jesús Pérez","99956548","Calle 26 # 456", 2.5f);
-        professionalList.add(professional);
-        professional = new Professional("Miguel Pérez","99326548","Calle 27 # 456",5);
-        professionalList.add(professional);
-        //Adapter
-        adapter = new ResultListAdapter(professionalList);
+    private void loadData(String typeProfessionist){
+        switch (typeProfessionist){
+            case "Electricista":
+                professionalList = (List) ProfessionalsData.getElectricistasData();
+                break;
+            case "Jardineria":
+                professionalList = (List) ProfessionalsData.getJardinerosData();
+                break;
+            case "Carpinteria":
+                professionalList = (List) ProfessionalsData.getCarpinterosData();
+                break;
+            case "Plomeria":
+                professionalList = (List) ProfessionalsData.getPlomerosData();
+                break;
+            default:
+                professionalList = (List) ProfessionalsData.getElectricistasData();
+                professionalList.addAll((List) ProfessionalsData.getJardinerosData());
+                professionalList.addAll((List) ProfessionalsData.getCarpinterosData());
+                professionalList.addAll((List) ProfessionalsData.getPlomerosData());
+                break;
+        }
+        adapter = new ResultListAdapter(professionalList, this);
     }
 
     private void setSearchResults() {

@@ -129,21 +129,21 @@ public class StartActivity extends AppCompatActivity
     public void searchGardeningCategory(View view){
 
         Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Jardinería");
+        intent.putExtra("categorySearch", "Jardineria");
         startActivity(intent);
     }
 
     public void searchWoodCategory(View view){
 
         Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Carpintería");
+        intent.putExtra("categorySearch", "Carpinteria");
         startActivity(intent);
     }
 
     public void searchPipingCategory(View view){
 
         Intent intent = new Intent(this, SearchActivity.class);
-        intent.putExtra("categorySearch", "Plomería");
+        intent.putExtra("categorySearch", "Plomeria");
         startActivity(intent);
     }
 }

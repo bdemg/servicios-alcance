@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.uady.jorge_cano.serviciosatualcance.adapters.CommentListAdapter;
 import com.uady.jorge_cano.serviciosatualcance.adapters.ServiceListAdapter;
 import com.uady.jorge_cano.serviciosatualcance.model.Comment;
-import com.uady.jorge_cano.serviciosatualcance.model.Professional;
+import com.uady.jorge_cano.serviciosatualcance.dao.Professional;
 
 public class WorkerDetailsActivity extends AppCompatActivity {
 

@@ -1,7 +1,5 @@
 package com.uady.jorge_cano.serviciosatualcance.dao;
 
-import com.uady.jorge_cano.serviciosatualcance.model.Professional;
-
 import java.util.ArrayList;
 
 /**
