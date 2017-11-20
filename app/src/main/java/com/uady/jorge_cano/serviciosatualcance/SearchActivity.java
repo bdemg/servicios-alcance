@@ -23,6 +23,8 @@ import com.uady.jorge_cano.serviciosatualcance.dao.Professional;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.uady.jorge_cano.serviciosatualcance.dao.ProfessionalsData;
+
 public class SearchActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

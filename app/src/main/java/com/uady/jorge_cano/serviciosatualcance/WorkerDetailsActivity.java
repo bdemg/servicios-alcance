@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.uady.jorge_cano.serviciosatualcance.adapters.CommentListAdapter;
 import com.uady.jorge_cano.serviciosatualcance.adapters.ServiceListAdapter;
 import com.uady.jorge_cano.serviciosatualcance.model.Comment;
+import com.uady.jorge_cano.serviciosatualcance.model.Professional;
 
 public class WorkerDetailsActivity extends AppCompatActivity {
 
@@ -22,8 +23,20 @@ public class WorkerDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_worker_details);
 
-        displayServices();
+        Professional worker = (Professional) getIntent().getSerializableExtra("professional");
+
+        displayWorkerInfo(worker);
         displayComments();
+    }
+
+    private void displayWorkerInfo(Professional worker) {
+
+        ((TextView)findViewById(R.id.worker_name)).setText(worker.getName());
+        ((TextView)findViewById(R.id.worker_address)).setText(worker.getAddress());
+        ((TextView)findViewById(R.id.worker_email)).setText(worker.getEmail());
+        ((TextView)findViewById(R.id.worker_phone)).setText(worker.getPhoneNumber());
+        ((TextView)findViewById(R.id.worker_distance)).setText("a " + worker.getDistanceFromUser() + " km de su posición");
+        displayServices(worker.getServices());
     }
 
     public void callTelephone(View view) {
@@ -72,9 +85,7 @@ public class WorkerDetailsActivity extends AppCompatActivity {
         setListViewHeightBasedOnChildren(commentList);
     }
 
-    private void displayServices() {
-
-        String[] services = {"Destapar cañerías", "Reparar tubos", "Instalación de basín"};
+    private void displayServices(String[] services) {
 
         ListView serviceList = (ListView) findViewById(R.id.service_list);
         serviceList.setAdapter(new ServiceListAdapter(this, R.layout.service_list_item, services));
