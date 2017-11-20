@@ -1,4 +1,4 @@
-package com.uady.jorge_cano.serviciosatualcance;
+package com.uady.jorge_cano.serviciosatualcance.adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.uady.jorge_cano.serviciosatualcance.R;
 import com.uady.jorge_cano.serviciosatualcance.dao.Professional;
 
 import java.util.List;

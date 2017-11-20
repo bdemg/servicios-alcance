@@ -1,5 +1,7 @@
 package com.uady.jorge_cano.serviciosatualcance.dao;
 
+import java.util.ArrayList;
+
 /**
  * Created by M on 13/11/2017.
  */
@@ -10,14 +12,16 @@ public class Professional {
     private String telephone;
     private String address;
     private float rating;
+    private ArrayList<String> professions;
 
     public Professional() {}
 
-    public Professional(String name, String telephone, String address, float rating) {
+    public Professional(String name, String telephone, String address, float rating, ArrayList<String> professions) {
         this.name = name;
         this.telephone = telephone;
         this.address = address;
         this.rating = rating;
+        this.professions = professions;
     }
 
     public String getName() {
@@ -50,5 +54,17 @@ public class Professional {
 
     public void setRating(float rating) {
         this.rating = rating;
+    }
+
+    public ArrayList<String> getProfessions() {
+        return professions;
+    }
+
+    public void setProfessions(ArrayList<String> professions) {
+        this.professions = professions;
+    }
+
+    public void setProfession(String profession){
+        this.professions.add(profession);
     }
 }
