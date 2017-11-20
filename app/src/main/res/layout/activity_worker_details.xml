@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uady.jorge_cano.serviciosatualcance.WorkerDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/worker_image"
+            android:layout_width="119dp"
+            android:layout_height="119dp"
+            app:srcCompat="@drawable/user_icon"
+            />
+
+        <TextView
+            android:id="@+id/worker_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrique Eduardo Gimenez Torres"
+            android:textColor="@color/black"
+            android:textSize="@dimen/worker_name"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/worker_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calle 55a #278 x46 y 48 Francisco de Montejo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/general_text_size"
+            />
+
+        <TextView
+            android:id="@+id/worker_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:textColor="@color/linkBlue"
+            android:textSize="@dimen/general_text_size"
+            android:onClick="sendEmail"/>
+
+        <TextView
+            android:id="@+id/worker_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999 9465429"
+            android:textColor="@color/linkBlue"
+            android:textSize="@dimen/general_text_size"
+            android:onClick="callTelephone"/>
+
+        <TextView
+            android:id="@+id/worker_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a 6 km de su localización"
+            android:textColor="@color/black"
+            android:textSize="@dimen/general_text_size"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:rating="4.5"
+            android:progressTint="@color/starRating"
+            android:isIndicator="true"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/general_text_size"
+            android:layout_gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            />
+
+        <ListView
+            android:id="@+id/service_list"
+            android:layout_width="327dp"
+            android:layout_height="180dp"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comentarios:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/general_text_size"
+            android:layout_gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="25dp"
+            />
+
+        <ListView
+            android:id="@+id/comments_list"
+            android:layout_width="327dp"
+            android:layout_height="280dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
