@@ -15,7 +15,7 @@ public class ProfessionalsData {
                 "Calle 30 # 461 x 37 Colonia Centro 97000 Mérida, Yucatán",
                 "servielectitricadplomeria@gmail.com",
                 "9994172033",
-                new String[]{"Servicios generales en electricidad, plomería, en baños completos, climas bombas de agua, hidroneumáticos, piscinas, sistemas de riego, pintura, impermeabilizaciones, gas etc."},
+                new String[]{"Servicios generales en electricidad", "plomería, en baños completos", "climas", "bombas de agua", "hidroneumáticos", "piscinas", "sistemas de riego", "pintura", "impermeabilizaciones", "gas", "etc."},
                 6.4f,
                 2f
                 ));
@@ -24,7 +24,7 @@ public class ProfessionalsData {
                 "Calle 23 # 296 x 20 y 22 Col. Maria Luisa 97199 Mérida Yucatán",
                 "josearmando.electricoyplomero@hotmail.com",
                 "9992678160",
-                new String[]{"Plomeria y Electricidad. Mantenimiento a todo lo relativo a Baños,Casas, Reparación de toda la instalación y cableria. Instalación de Calentadores."},
+                new String[]{"Plomeria y Electricidad", "Mantenimiento a todo lo relativo a Baños,Casas", "Reparación de toda la instalación y cableria", "Instalación de Calentadores."},
                 2.3f,
                 4.5f
         ));
@@ -33,7 +33,7 @@ public class ProfessionalsData {
                 "CALLE 78 # 304 POR 45, CENTRO, C P 97000 MÉRIDA YUCATÁN",
                 "electricidadyplomerialopez@gmail.com",
                 "9994121575",
-                new String[]{"Servicios de electricidad, plomeria, climas, hidroneumaticos, piscinas, sistemas de riego, baños completos, lineas eléctricas bifásicas, monofasicas, trifasicas etc Servicios garantizados"},
+                new String[]{"Servicios de electricidad", "plomeria", "climas", "hidroneumaticos", "piscinas", "sistemas de riego", "baños completos", "lineas eléctricas bifásicas", "monofasicas", "trifasicas etc."},
                 5.8f,
                 3f
         ));
@@ -102,7 +102,7 @@ public class ProfessionalsData {
                 "Calle 65b # 641 por 36, Centro. C P 97000, Mérida Yucatáan",
                 "mariopereiraelectrico@gmail.com",
                 "9991022601",
-                new String[]{": Servicios completos en electricidad y plomeria en baños completos, sistemas eléctricos, bombas, centros de carga, piscinas, climas, albañilería, sistemas de gas, etc llamenos 24hrs"},
+                new String[]{"Servicios completos en electricidad y plomeria en baños completos, sistemas eléctricos, bombas, centros de carga, piscinas, climas, albañilería, sistemas de gas, etc llamenos 24hrs"},
                 5.9f,
                 4.5f
         ));
