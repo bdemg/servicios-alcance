@@ -18,7 +18,7 @@ public class ProfessionalsData {
                 new String[]{"Servicios generales en electricidad", "plomería, en baños completos", "climas", "bombas de agua", "hidroneumáticos", "piscinas", "sistemas de riego", "pintura", "impermeabilizaciones", "gas", "etc."},
                 6.4f,
                 2f
-                ));
+        ));
 
         electricistas.add(new Professional("Electricidad y Plomeria",
                 "Calle 23 # 296 x 20 y 22 Col. Maria Luisa 97199 Mérida Yucatán",
@@ -322,5 +322,6 @@ public class ProfessionalsData {
 
         return carpinteros;
     }
-    
+
 }
+
