@@ -17,7 +17,7 @@ public class ProfessionalsData {
                 "Calle 30 # 461 x 37 Colonia Centro 97000 Mérida, Yucatán",
                 "servielectitricadplomeria@gmail.com",
                 "9994172033",
-                new String[]{"Servicios generales en electricidad, plomería, en baños completos, climas bombas de agua, hidroneumáticos, piscinas, sistemas de riego, pintura, impermeabilizaciones, gas etc."},
+                new String[]{"Servicios generales en electricidad", "Plomería en baños completos","Climas","Bombas de agua","Hidroneumáticos", "Piscinas", "Sistemas de riego","Pintura", "Impermeabilizaciones", "Gas", "Etc"},
                 6.4f
                 ));
 
@@ -25,7 +25,7 @@ public class ProfessionalsData {
                 "Calle 23 # 296 x 20 y 22 Col. Maria Luisa 97199 Mérida Yucatán",
                 "josearmando.electricoyplomero@hotmail.com",
                 "9992678160",
-                new String[]{"Plomeria y Electricidad. Mantenimiento a todo lo relativo a Baños,Casas, Reparación de toda la instalación y cableria. Instalación de Calentadores."},
+                new String[]{"Plomeria y Electricidad","Mantenimiento a todo lo relativo a Baños","Casas", "Reparación de toda la instalación y cableria", "Instalación de Calentadores"},
                 2.3f
         ));
 
@@ -33,7 +33,7 @@ public class ProfessionalsData {
                 "CALLE 78 # 304 POR 45, CENTRO, C P 97000 MÉRIDA YUCATÁN",
                 "electricidadyplomerialopez@gmail.com",
                 "9994121575",
-                new String[]{"Servicios de electricidad, plomeria, climas, hidroneumaticos, piscinas, sistemas de riego, baños completos, lineas eléctricas bifásicas, monofasicas, trifasicas etc Servicios garantizados"},
+                new String[]{"Servicios de electricidas", "Plomeria","Climas", "Hidroneumaticos","Piscinas", "Sistemas de riego", "Baños completos", "Líneas eléctricas bifásicas", "Monofásicas", "Trifásicas", "Etc", "Servicios garantizados"},
                 5.8f
         ));
 
@@ -41,7 +41,7 @@ public class ProfessionalsData {
                 "Calle 17 # 12, Centro. C P 97000 Mérida Yucatán",
                 "multiservelec@hotmail.com",
                 "9999700167",
-                new String[]{"Servicios de plomeros, electricidad y albañilería en Mérida Yucatán"},
+                new String[]{"Servicios de plomeros", "Electricidad", "Albañilería en Mérida Yucatán"},
                 6.0f
         ));
 
@@ -57,7 +57,7 @@ public class ProfessionalsData {
                 "Calle 60 # 565 por 45, Centro. C P 97000 Mérida Yucatán",
                 "alexaservicios@hotmail.com",
                 "9995064424",
-                new String[]{"Servicios de electricidad, plomeria, y climas en baños completos, piscinas, hidroneumaticos, climas, sistemas de riego, líneas bifásicas, monofasicas, trifasicas, bombas etc llámanos trabajos garantizados"},
+                new String[]{"Plomeria y Electricidad","Mantenimiento a todo lo relativo a Baños","Casas", "Reparación de toda la instalación y cableria", "Instalación de Calentadores"},
                 6.2f
         ));
 
@@ -65,7 +65,7 @@ public class ProfessionalsData {
                 "Calle 10 # 476 entre 37 y 39, Col. Granjas C. P. 97125 Mérida Yucatán",
                 "ruizserviciosplomeria@hotmail.com",
                 "9991102454",
-                new String[]{"Servicios de plomería electricidad climas sistema de riego calentadores mejoramos cualquier presupuesto nosotros si resolvemos el problema trabajos garantizados"},
+                new String[]{"Servicios de plomería y electricidad", "Climas", "Sistema de riego", "Calentadores", "Mejoramos cualquier presupuesto","Nosotros sí resolvemos el problema", "Trabajos garantizados"},
                 4.1f
         ));
 
@@ -73,7 +73,7 @@ public class ProfessionalsData {
                 "Calle 44a # 911 por 65 y 67, Centro 97000. Mérida Yucatán",
                 "serviciosplomeriaadrian@gmail.com",
                 "9991628620",
-                new String[]{"Servicios de electricidad, plomeria y albañileria en reparaciones y mantenimiento en su casa o negocio en baños completos, bombas, sistemas eléctricos monofasica, bifasica, trifasica, calentadores, hidroneumáticos, piscinas, impermeabilizacion, pintura, sistemas de riego etc llamanos atendemos trabajos urgentes"},
+                new String[]{"Servicios de electricidad", "Plomería y albañilería", "Reparaciones y mantenimiento en su casa o negocio", "Baños completos","Bombas", "Sistemas eléctricos monofasica, bifasica, trifasica", "Calentadores", "Hidroneumáticos", "Piscinas", "Impermeabilizacion", "Pintura", "Sistemas de riego", "Etc", "Atendemos trabajos urgentes"},
                 5.8f
         ));
 
@@ -87,7 +87,7 @@ public class ProfessionalsData {
                 "Calle 145 # 329 por 64 Y 66, Colonia San José Tecoh Sur 2. C P 97298 Mérida Yucatán",
                 "cahumservicios@hotmail.com",
                 "9992024383",
-                new String[]{"SERVICIOS DE PLOMERIA, ELECTRICIDAD DE BAJA Y MEDIA TENCION, INSTALACION Y MANTENIMIENTO DE AIRES ACONDICIONADOS TIPO SPLIT TRABAJOS SERIOS, GARANTIZADOS Y ECONOMICOS"},
+                new String[]{"SERVICIOS DE PLOMERIA", "ELECTRICIDAD DE BAJA Y MEDIA TENCION", "INSTALACION Y MANTENIMIENTO DE AIRES ACONDICIONADOS TIPO SPLIT", "TRABAJOS SERIOS, GARANTIZADOS Y ECONOMICOS"},
                 4.7f
         ));
 
@@ -95,7 +95,7 @@ public class ProfessionalsData {
                 "Calle 65b # 641 por 36, Centro. C P 97000, Mérida Yucatáan",
                 "mariopereiraelectrico@gmail.com",
                 "9991022601",
-                new String[]{": Servicios completos en electricidad y plomeria en baños completos, sistemas eléctricos, bombas, centros de carga, piscinas, climas, albañilería, sistemas de gas, etc llamenos 24hrs"},
+                new String[]{"Servicios completos en electricidad y plomeria", "Baños completos", "Sistemas eléctricos", "Bombas", "Centros de carga", "Piscinas", "Climas", "Albañilería", "Sistemas de gas", "Etc", "Llámenos 24hrs"},
                 5.9f
         ));
 
@@ -103,7 +103,7 @@ public class ProfessionalsData {
                 "Calle 63 # 654 por 66, Centro. C P 97000 Mérida Yucatán",
                 "",
                 "9994187899",
-                new String[]{" Servicios de electricidad y plomería en baños completos,lineas eléctricas,piscinas,calentadores,bombas, hidroneumaticas, climas etc Llámenos 24 hrs"},
+                new String[]{" Servicios de electricidad y plomería", "Baños completos", "Lóneas eléctricas", "Piscinas","Calentadores","Bombas", "Hidroneumáticas", "Climas", "Etc", "Llámenos 24 hrs"},
                 6.0f
         ));
 
@@ -111,15 +111,15 @@ public class ProfessionalsData {
                 "Calle 23 # 296 x 20 y 22 Col. Maria Luisa 97199 Mérida Yucatán",
                 "josearmando.electricoyplomero@hotmail.com",
                 "9992678160",
-                new String[]{"Plomeria y Electricidad. Mantenimiento a todo lo relativo a Baños,Casas, Reparación de toda la instalación y cableria. Instalación de Calentadores."},
-                .3f
+                new String[]{"Plomeria y Electricidad","Mantenimiento a todo lo relativo a Baños","Casas", "Reparación de toda la instalación y cableria", "Instalación de Calentadores"},
+                2.3f
         ));
 
         plomeros.add(new Professional("ELETRICIDAD Y PLOMERIA LOPEZ",
                 "CALLE 78 # 304 POR 45, CENTRO, C P 97000 MÉRIDA YUCATÁN",
                 "electricidadyplomerialopez@gmail.com",
                 "9994121575",
-                new String[]{"Servicios de electricidad, plomeria, climas, hidroneumaticos, piscinas, sistemas de riego, baños completos, lineas eléctricas bifásicas, monofasicas, trifasicas etc Servicios garantizados"},
+                new String[]{"Servicios de electricidad", "Plomeria", "Climas", "Hidroneumáticos", "Piscinas", "Sistemas de riego", "Baños completos", "Líneas eléctricas bifásicas, monofasicas, trifasicas", "Etc", "Servicios garantizados"},
                 5.8f
         ));
 
@@ -127,7 +127,7 @@ public class ProfessionalsData {
                 "Calle 57a # 191 por 68 y 70, Centro. C P 97000 Mérida Yucatán",
                 "mantenimientomartin@hotmail.com",
                 "9991001920",
-                new String[]{" servicios de eletricidad y plomeria en baños completos, boilers, bombas, hidroneumáticos, climas, piscinas, lineas eléctricas, bifasica, trifasica, tierra física, sistemas de riego , etc. Llámanos "},
+                new String[]{"Servicios de eletricidad", "Plomeria en baños completos", "Boilers", "Bombas", "Hidroneumáticos", "Climas", "Piscinas", "Líneas eléctricas, bifasica, trifasica, tierra física", "Sistemas de riego" , "Etc"},
                 5.8f
         ));
 
@@ -135,7 +135,7 @@ public class ProfessionalsData {
                 "Calle 112 # 193 por 54 Y 56, 5 COLONIAS. C P 97000 Mérida Yucatán",
                 "electricidadcolonias@gmail.com",
                 "9993501728",
-                new String[]{"ervicios de reparación y mantenimiento en baños completos, calentadores, bombas ,piscinas, hidroneumáticos. Lineas, bifásicas, monofásicas, trifásicas,etc. Llámanos a cualquier hora"},
+                new String[]{"Servicios de reparación y mantenimiento en baños completos", "Calentadores", "Bombas", "Piscinas", "Hidroneumáticos", "Lineas, bifásicas, monofásicas, trifásicas", "Llámanos a cualquier hora"},
                 3.2f
         ));
 
@@ -143,7 +143,7 @@ public class ProfessionalsData {
                 "Calle 30 # 461 x 37 Colonia Centro 97000 Mérida, Yucatán",
                 "servielectitricadplomeria@gmail.com",
                 "9994172033",
-                new String[]{"Servicios generales en electricidad, plomería, en baños completos, climas bombas de agua, hidroneumáticos, piscinas, sistemas de riego, pintura, impermeabilizaciones, gas etc."},
+                new String[]{"Servicios generales en electricidad", "Plomería", "Baños completos", "Climas", "Bombas de agua", "Hidroneumáticos", "Piscinas", "Sistemas de riego", "Pintura", "Impermeabilizaciones", "Gas","Etc."},
                 6.4f
         ));
 
@@ -157,7 +157,7 @@ public class ProfessionalsData {
                 "Avenida Temozón norte pozo 8, Mérida, Yucatán",
                 "laceibaverdes@gmail.com",
                 "9993316228",
-                new String[]{"Suministro de materiales: flores, arena, piedras rodadas, etc."," Pasto en rollos","Limpiezas", "Decoración","Diseño de jardines, mantenimiento de jardines"},
+                new String[]{"Suministro de materiales", "Flores", "Arena", "Piedras rosadas", "Etc", "Pasto en rollos","Limpiezas", "Decoración","Diseño de jardines", "Mantenimiento de jardines"},
                 7.0f
         ));
 
@@ -231,7 +231,7 @@ public class ProfessionalsData {
                         "Calle 41 # 532 E x 66 y 72 Centro, (a un costado de la SPV), Mérida, Yucatán",
                 "www.tapiceriamante.com",
                 "99 91 53 56 70",
-                new String[]{"Tapicería en general, automotríz, residencial, industrial, hotelera, fabricación de muebles y cuartos acústicos para estudios de grabación."},
+                new String[]{"Tapicería en general", "Automotríz", "Residencial", "Industrial", "Hotelera", "Fabricación de muebles",  "Cuartos acústicos para estudios de grabación"},
                 7.0f
         ));
 
@@ -239,7 +239,7 @@ public class ProfessionalsData {
                 "Calle 47 a # 537 por 34 y 36, Juan Pablo II. C P 97246 Mérida Yucatán",
                 "hansmuebles@hotmail.com",
                 "9993574769",
-                new String[]{"Carpintería y mueblería, muebles de oficina casa negocio etc Herrería artística rejas portones tinglados etc"},
+                new String[]{"Carpintería", "Mueblería", "Muebles de oficina", "Casa", "Negocio", "Etc", "Herrería artística", "Rejas", "Portones", "Tinglados", "Etc"},
                 9.4f
         ));
 
@@ -247,7 +247,7 @@ public class ProfessionalsData {
                 "Calle 22 # 789 por 22, San Ramón. C P 97115 Mérida Yucatán",
                 "wmcarpinteros@live.com.mx",
                 "9991635826",
-                new String[]{"Estamos dedicados a la fabricación e instalación de mobiliario para su hogar con la mejor calidad, como puertas, alacenas, armarios,muebles minimalistas. - Puertas - Comedores - Cocinas - Closets - Cajoneras - Libreros - Centros de entretenimiento - Fabricamos sobre diseño y todo lo que se pueda realizar en madera"},
+                new String[]{"Fabricación e instalación de mobiliario para su hogar con la mejor calidad", " Pertas", "Alacenas", "Armarios", "Muebles minimalistas", "Comedores", "Cocinas", "Closets", "Cajoneras", "Libreros", "Centros de entretenimiento", "Fabricamos sobre diseño y todo lo que se pueda realizar en madera"},
                 5.6f
         ));
 
@@ -255,7 +255,7 @@ public class ProfessionalsData {
                 "CALLE 29 No.741 X90 Y 92, FRACC. PUERTAS DEL PALMAR. C. P. 97314 MERIDA",
                 "arteenmadera@hotmail.com",
                 "9991262736",
-                new String[]{"Carpintería en general , reparación y mantenimiento de muebles de madera,muebles sobre diseño, cocinas integrales, closets, puertas de madera"},
+                new String[]{"Carpintería en general", "Reparación y mantenimiento de muebles de madera", "Muebles sobre diseño", "Cocinas integrales", "Closets", "Puertas de madera"},
                 3.8f
         ));
 
@@ -263,7 +263,7 @@ public class ProfessionalsData {
                 "Calle 29 N°156-A Col. San Antonio Kaua II, Merida,Yucatan.",
                 "No disponible",
                 "(999)166 13 64",
-                new String[]{"Fabricamos: *Cocinas *Comedores *Alacenas *Closets *Puertas *Salas"},
+                new String[]{"Cocinas", "Comedores", "Alacenas", "Closets", "Puertas", "Salas"},
                 11.6f
         ));
 
@@ -271,7 +271,7 @@ public class ProfessionalsData {
                 "Calle 69 N°968 entre 116-B y 120, Col Jardines de Nueva Mulsay,Merida,Yuc.",
                 "andradecarpinteria@yahoo.mx",
                 "985 47 04",
-                new String[]{"Elaboracion de: *Tablaroca *Artesania *Puertas *Closets *Ventanas *Cosina Integral"},
+                new String[]{"Tablaroca", "Artesania", "Puertas", "Closets", "Ventanas", "Cosina", "Integral"},
                 5.0f
         ));
 
@@ -279,7 +279,7 @@ public class ProfessionalsData {
                 "30 X 39 y 41 No. 276 Loc 3. C.P. 97117, Mérida, Yucatán.",
                 "woodmerida@hotmail.com",
                 "9992862696",
-                new String[]{"Tapiceria. Arte. Recepcion. Bancas. Minimalista. Interiorismo. mobiliario. Tallados. Interiores. Interiorismo. Ebanisteria. Carpinteria. mobiliariorias. Diseño."},
+                new String[]{"Tapiceria", "Arte", "Recepción", "Bancas", "Minimalista", "Interiorismo", "Mobiliario", "Tallados", "Interiores", "Interiorismo", "Ebanisteria", "Carpintería", "Mobiliarias", "Diseño"},
                 10.7f
         ));
 
@@ -287,7 +287,7 @@ public class ProfessionalsData {
                 "Periferico Nte S/N X 21. Chuburna de Hidalgo.. C.P. 97200, Mérida, Yucatán",
                 "decowoodmid@hotmail.com",
                 "1952021",
-                new String[]{"Tejaban de Madera. Closets. Diseños Sobre Medida. Remodelamiento y Reparacion. Producción de Puertos. de Madera. y Pintura de Elementos."},
+                new String[]{"Tejaban de Madera", "Closets", "Diseños Sobre Medida", "Remodelamiento y Reparacion", "Producción de Puertos de Madera", "Pintura de Elementos"},
                 9.0f
         ));
 
