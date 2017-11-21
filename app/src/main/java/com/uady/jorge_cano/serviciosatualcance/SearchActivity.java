@@ -57,10 +57,14 @@ public class SearchActivity extends AppCompatActivity
         String category = intent.getStringExtra("categorySearch");
 
         loadData(category);
+        adapter = new ResultListAdapter(professionalList, this);
         recyclerView.setAdapter(adapter);
     }
 
     private void loadData(String typeProfessionist){
+        if(typeProfessionist==null){
+            typeProfessionist = "ninguno";
+        }
         switch (typeProfessionist){
             case "Electricista":
                 professionalList = (List) ProfessionalsData.getElectricistasData();
@@ -81,7 +85,6 @@ public class SearchActivity extends AppCompatActivity
                 professionalList.addAll((List) ProfessionalsData.getPlomerosData());
                 break;
         }
-        adapter = new ResultListAdapter(professionalList, this);
     }
 
     private void setSearchResults() {
@@ -107,7 +110,8 @@ public class SearchActivity extends AppCompatActivity
         serviceSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                return false;
+                search(query);
+                return true;
             }
 
             @Override
@@ -119,6 +123,7 @@ public class SearchActivity extends AppCompatActivity
         String category = getIntent().getStringExtra("searchQuery");
         if(category != null) {
             serviceSearch.setQuery(category, false);
+            search(category);
             setTitle(category);
         } else {
             String searchQuery = getIntent().getStringExtra("categorySearch");
@@ -127,6 +132,21 @@ public class SearchActivity extends AppCompatActivity
         }
 
         return true;
+    }
+
+    public void search(String query){
+        String category = (String) SearchActivity.this.getTitle();
+        if(category == null) {
+            //loadData("ninguno");
+        }
+        List<Professional> aux = new ArrayList<>();
+        for(Professional p : professionalList){
+            if(p.getName().contains(query)){
+                aux.add(p);
+            }
+        }
+        adapter.setList(aux);
+        adapter.notifyDataSetChanged();
     }
 
     @Override

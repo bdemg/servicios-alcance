@@ -75,6 +75,9 @@ public class ResultListAdapter extends RecyclerView.Adapter<ResultListAdapter.Re
         
     }
 
+    public  void setList(List<Professional> list){
+        professionalList = list;
+    }
     @Override
     public int getItemCount() {
         return professionalList.size();

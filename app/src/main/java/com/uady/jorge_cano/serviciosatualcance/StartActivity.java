@@ -61,7 +61,7 @@ public class StartActivity extends AppCompatActivity
                 if(!query.equals("")) {
                     search(query);
                 }
-                return false;
+                return true;
             }
 
             @Override

@@ -55,7 +55,8 @@
                 android:rating="3.5"
                 android:numStars="5"
                 android:stepSize="0.5"
-                style = "?android:attr/ratingBarStyleSmall"
+                android:progressTint="@color/starRating"
+                android:isIndicator="true"
                 android:layout_toRightOf="@+id/person_photo"
                 android:layout_below="@+id/distance_of_me"
                 />

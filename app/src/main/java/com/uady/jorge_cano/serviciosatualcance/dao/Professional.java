@@ -18,13 +18,14 @@ public class Professional implements Serializable{
     public Professional() {
     }
 
-    public Professional(String name, String address, String email, String phoneNumber, String[] services, float distanceFromUser) {
+    public Professional(String name, String address, String email, String phoneNumber, String[] services, float distanceFromUser, float rating) {
         this.name = name;
         this.address = address;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.services = services;
         this.distanceFromUser = distanceFromUser;
+        this.rating = rating;
     }
 
     public String getName() {

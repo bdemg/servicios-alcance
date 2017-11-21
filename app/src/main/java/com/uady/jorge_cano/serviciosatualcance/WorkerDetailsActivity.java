@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +37,7 @@ public class WorkerDetailsActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.worker_email)).setText(worker.getEmail());
         ((TextView)findViewById(R.id.worker_phone)).setText(worker.getPhoneNumber());
         ((TextView)findViewById(R.id.worker_distance)).setText("a " + worker.getDistanceFromUser() + " km de su posición");
+        ((RatingBar)findViewById(R.id.ratingBar)).setRating(worker.getRating());
         displayServices(worker.getServices());
     }
 
